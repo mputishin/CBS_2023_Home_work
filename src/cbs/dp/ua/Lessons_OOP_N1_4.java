@@ -7,6 +7,7 @@ public class Lessons_OOP_N1_4 {
         System.out.println("Страна: " + address.getCountry());
         System.out.println("Город: " + address.getCity());
         System.out.println("Улица: " + address.getStreet());
+        System.out.println("Дом: " + address.getHouse());
         System.out.println("Кавртира: " + address.getApartment());
 
     }
