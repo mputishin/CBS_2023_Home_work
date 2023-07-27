@@ -6,8 +6,6 @@ public class Vechicle {
     int speed;
     int year;
 
-    public Vechicle(){}
-
     public Vechicle (int price, int speed, int year) {
         this.price = price;
         this.speed = speed;
