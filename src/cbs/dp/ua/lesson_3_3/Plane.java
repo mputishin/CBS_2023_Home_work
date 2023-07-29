@@ -1,4 +1,4 @@
-package cbs.dp.ua;
+package cbs.dp.ua.lesson_3_3;
 
 public class Plane extends Vechicle {
 

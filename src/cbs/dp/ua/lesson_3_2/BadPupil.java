@@ -1,4 +1,4 @@
-package cbs.dp.ua;
+package cbs.dp.ua.lesson_3_2;
 
 public class BadPupil extends Pupil {
     public void study() {
