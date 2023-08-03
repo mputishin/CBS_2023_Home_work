@@ -6,11 +6,12 @@ public class Main {
     public static void main(String[] args) {
 
         Scanner scn = new Scanner(System.in);
-        ConverterTemperature convert = new ConverterTemperature();
+        ConverterTemperature convFahrenheit = new ConverterTemperatureFahrenheit();
+        ConverterTemperature convKelvin = new ConverterTemperatureKelvin();
         System.out.println("Enter the temperature in Celsius");
         double temp = scn.nextDouble();
 
-        System.out.println(" The temperature Celsius to Fahrenheit: " + convert.convertFahrenheit(temp));
-        System.out.println(" The temperature Celsius to Kelvin: " + convert.convertKelvin(temp));
+        System.out.println(" The temperature Celsius to Fahrenheit: " + convFahrenheit.convert(temp));
+        System.out.println(" The temperature Celsius to Kelvin: " + convKelvin.convert(temp));
     }
 }

@@ -9,7 +9,7 @@ public class Printer {
             "If this message another color? This class is child  ";
 
     void printer() {
-        if (this instanceof Printer) {
+        if (Printer.class.equals(this.getClass())) {
         System.out.println(message + this.getClass());
     } else {
             System.out.println(ANSI_GREEN + message + this.getClass() + ANSI_RESET);
