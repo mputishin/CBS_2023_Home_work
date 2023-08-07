@@ -34,8 +34,8 @@ public class Worker {
     }
 
     public static Worker[] sort (Worker[] workers) {              //Метод алфавитной сртировки
-        Worker[] sortworkers = new Worker[workers.length];
-        String[] fio = new String[workers.length];
+        Worker[] sortworkers = new Worker[workers.length];        //Вытягиваем из объектов ФИО, формируем массив из ФИО
+        String[] fio = new String[workers.length];                //Сортируем по алфавиту и с помощью сопоставления формируем новый массив объектов в алфавитном уже порядке
         for (int i = 0; i < workers.length; i++) {
             fio[i] = workers[i].getFio();
         }
