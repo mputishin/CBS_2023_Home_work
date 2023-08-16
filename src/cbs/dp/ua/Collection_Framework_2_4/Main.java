@@ -1,6 +1,5 @@
 package cbs.dp.ua.Collection_Framework_2_4;
 
-import javax.swing.text.html.HTMLDocument;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
