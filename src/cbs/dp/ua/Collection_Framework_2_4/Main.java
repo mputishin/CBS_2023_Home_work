@@ -16,18 +16,18 @@ public class Main {
 
         Map<String, String> map = new HashMap<>();
         while (true) {
-            System.out.println("Enter city: ");
+            System.out.println("Enter the city: ");
             String city = reader.readLine();
             if (city.isEmpty()) {
                 break;
             }
-            System.out.println("Enter family: ");
+            System.out.println("Enter the family: ");
             String family = reader.readLine();
             map.put(city, family);
         }
 
         Iterator<Map.Entry<String, String>> iterator = map.entrySet().iterator();
-        System.out.println("Enter city live: ");
+        System.out.println("Enter the city live: ");
         String cityLive = reader.readLine();
         while (iterator.hasNext()) {
             Map.Entry<String, String> pair = iterator.next();
