@@ -24,9 +24,9 @@ public class Main {
         int day = period.getDays();
 
         myDate = myDate.plusYears(years);
-        myDate = myDate.plusMonths(month);
         myDate = myDate.plusDays(day);                                                  //отримання согоднішньої дати з нуля годин
 
+        myDate = myDate.plusMonths(month);
         Date time1 = new Date();                                                        //початок розрахунку годин та хвилин
         Date time2 = sdf.parse(String.valueOf(myDate));                                 //перевод LocalDate в Date
         long time = time1.getTime() - time2.getTime();                                  //отримання різниці між теперяшнім часом та північью
