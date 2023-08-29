@@ -2,9 +2,10 @@ package cbs.dp.ua.Reflection_5_3;
 
     public final class SomeClass {
 
+        static final int numb = 9;
         private String word = "JustWord";
         protected int age = 7;
-        char chr = '5';
+        public char chr = '5';
 
         public SomeClass() {
 
