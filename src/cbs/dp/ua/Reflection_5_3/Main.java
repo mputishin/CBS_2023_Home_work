@@ -13,7 +13,7 @@ public class Main {
         Field[] fields = cl.getDeclaredFields();
 
         for (Field field : fields) {
-            Class <?> fieldType = field.getType();
+            Class<?> fieldType = field.getType();
             System.out.println(field.getName());
             System.out.println(fieldType.getName());
             if (Modifier.isPrivate(field.getModifiers())) System.out.println("private ");
@@ -29,7 +29,7 @@ public class Main {
 
         Constructor<?>[] constructors = cl.getConstructors();
         int i = 0;
-        for (Constructor<?> ctr : constructors ) {
+        for (Constructor<?> ctr : constructors) {
             Class<?>[] paramTypes = ctr.getParameterTypes();
             System.out.print(++i + " ");
             for (Class<?> paramType : paramTypes) {
@@ -40,11 +40,11 @@ public class Main {
         System.out.println("========================================");
 
         Method[] methods = cl.getMethods();
-        for(Method method : methods) {
+        for (Method method : methods) {
             System.out.println(method.getName());
             System.out.println(method.getReturnType().getName());
             Class<?>[] paramTypes = method.getParameterTypes();
-            for(Class<?> paramType : paramTypes) {
+            for (Class<?> paramType : paramTypes) {
                 System.out.println(paramType.getName());
             }
             System.out.println();
